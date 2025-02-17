@@ -16,13 +16,13 @@ This Flutter project demonstrates **state management without external packages**
 │── main.dart              # App entry point
 │
 │── di
-│──── app_state.dart         # Centralized store for all ViewModels
-│──── app_provider.dart      # InheritedNotifier for state management
+│   │── app_state.dart         # Centralized store for all ViewModels
+│   │── app_provider.dart      # InheritedNotifier for state management
 │
 │── views              
-│── auth_v.dart       # Login screen
-│── home_v.dart       # Home screen with API fetch & logout
-│── counter_v.dart       # Simple counter app
+│   │── auth_v.dart       # Login screen
+│   │── home_v.dart       # Home screen with API fetch & logout
+│   │── counter_v.dart       # Simple counter app
 │
 │── viewmodels
 │   │── auth_vm.dart   # Manages user authentication
