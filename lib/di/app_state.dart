@@ -20,4 +20,14 @@ class AppState extends ChangeNotifier {
 
   /// Handles API calls and post data management
   final PostsViewModel postsVM = PostsViewModel();
+
+  @override
+  void dispose() {
+    counterVM.dispose();
+    themeVM.dispose();
+    authVM.dispose();
+    postsVM.dispose();
+
+    super.dispose();
+  }
 }
